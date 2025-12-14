@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo svg {
+    display: block;
+}
+
+.nav {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 280px;
+    font-size: 16px;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #3D3D3D;
+    padding-bottom: 6px;
+}
+
+.nav a.active {
+    border-bottom: 3px solid #46A358;
+}
+
+.hero {
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+
+    .text-block {
+        max-width: 680px;
+        display: inline-block;
+        padding: 60px 43px;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #3D3D3D;
+        margin-bottom: 7px;
+    }
+
+    h1 {
+        color: #3D3D3D;
+        font-size: 70px;
+        font-weight: 900;
+        line-height: 70px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    span {
+        color: #46A358;
+    }
+
+    p {
+        color: #727272;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 44px;
+    }
+}
+
+.btn {
+    color: #FFFFFF;
+    background-color: #46A358;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 8px 16px 7px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 394px;
+}
+
+.btn-hero {
+    padding: 11px 24px 9px;
+    width: 140px;
+    color: #FFFFFF;
+    background-color: #46A358;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.hero-image {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+
+    .big-img {
+        height: 450px;
+    }
+
+    .small-img {
+        position: absolute;
+        bottom: 17px;
+        left: 0;
+        height: 135px;
+    }
+}
