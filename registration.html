@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Registration</title>
+</head>
+<body>
+     <main>
+         <div class="container">
+        <div class="login_register">
+            <span>
+                <a href="login.html"><span style="color: #3D3D3D">Login</span></a>
+            </span>
+            <span> | </span>
+            <span>
+                <a href="registration.html"><span style="color: #46A358">Register</span></a>
+            </span>
+        </div>
+
+            <p class="text">
+                Enter your email and password to register.
+            </p>
+
+            <form action="#" method="post">
+                <div class="login_form">
+                    <label for="username"></label>
+                    <input type="text"
+                           id="username"
+                           name="username"
+                           placeholder="Username"
+                           required minlength="3"
+                    >
+                </div>
+
+                <div class="login_form">
+                    <label for="email"></label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email address"
+                           required
+                    >
+                </div>
+
+                <div class="login_form">
+                    <label for="password"></label>
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Password"
+                           required
+                           minlength="6"
+                           maxlength="20"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+                           title="The password must be between 8 and 16 characters long and include at least one number, one lowercase letter, and one uppercase letter."
+                    >
+                </div>
+
+                <div class="login_form">
+                    <label for="confirm_password"></label>
+                    <input type="password"
+                           id="confirm_password"
+                           name="confirm_password"
+                           placeholder="Confirm Password"
+                           required minlength="6"
+                           maxlength="20"
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}"
+                           title="The password must be between 8 and 16 characters long and include at least one number, one lowercase letter, and one uppercase letter."
+                    >
+                </div>
+
+                <div>
+                    <button type="submit" class="register_btn">
+                        Register
+                    </button>
+                </div>
+            </form>
+
+                    <div class="divider">Or register with</div>
+
+                        <div>
+                            <button type="button">
+                                <img src="./images/google.svg" alt="Google">
+                                Continue with Google
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button">
+                                <img src="./images/facebook.svg" alt="Facebook">
+                                Continue with Facebook
+                            </button>
+                        </div>
+         </div>
+    </main>
+</body>
+</html>
