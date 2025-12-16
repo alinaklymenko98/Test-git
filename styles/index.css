@@ -1,3 +1,5 @@
+@import "./fonts.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +7,15 @@
     outline: none;
     border: none;
 }
+body {
+    font-family: "Cera Pro", sans-serif;
+    background-color: #FFFFFF;
+}
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
-    font-size: 0;
+
 }
 
 .header {
@@ -55,6 +60,7 @@
 .nav a.active {
     border-bottom: 3px solid #46A358;
 }
+
 
 .hero {
     background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
@@ -107,7 +113,7 @@
     padding: 8px 16px 7px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 394px;
+    margin-left: 360px;
 }
 
 .btn-hero {
@@ -136,4 +142,158 @@
         left: 0;
         height: 135px;
     }
+}
+
+.catalog {
+    padding: 40px 0;
+}
+
+.sidebar {
+    float: left;
+    width: 300px;
+    background-color: #FBFBFB;
+
+
+    h3{
+        color: #3D3D3D;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+    }
+}
+
+.sidebar-title {
+    margin: 0 0 15px;
+    padding: 20px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    height: 590px;
+    width: 310px;
+}
+
+.category-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.category-list li.active {
+    color: #46A358;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+.sale-banner {
+    margin: 40px -28px 0;
+}
+
+.sale-banner img {
+    width: 100%;
+    display: block;
+
+}
+
+.products {
+    float: right;
+    width: 840px;
+    height: 1190px;
+}
+
+.products-top {
+    margin-bottom: 30px;
+}
+
+.tabs {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs li {
+    float: left;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.tabs li.active {
+    color: #46A358;
+    border-bottom: 2px solid #46A358;
+    padding-bottom: 5px;
+}
+
+.sort {
+    float: right;
+
+    .text-sort{
+        float: left;
+    }
+}
+
+.product {
+    float: left;
+    width: 30%;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+.product img {
+    width: 258px;
+    height: 300px;
+    float: left;
+}
+
+.product-name{
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+    text-align: left;
+}
+.product-price {
+    float: left;
+    color: #46A358;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.pagination {
+    float: right;
+    margin-top: 20px;
+}
+
+.page {
+    float: left;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #E5E5E5;
+    color: #333;
+}
+
+.page.active {
+    background-color: #46A358;
+    color: #fff;
+    border-color: #46A358;
 }
