@@ -1,5 +1,6 @@
 @import "./fonts.css";
 
+
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +59,9 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.menu a:hover {
+    color: #1A712A;
 }
 
 .submenu {
@@ -187,7 +191,14 @@ body {
     padding: 8px 16px 7px;
     display: flex;
     gap: 4px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
+    .btn:hover {
+        background: #3D3D3D;
+        transform: translateY(-2px);
+        color: #FBFBFB;
+    }
+
 .btn img{
         display: flex;
         width: 20px;
@@ -211,6 +222,19 @@ body {
     line-height: 20px;
     font-weight: 700;
 }
+
+
+.btn-hero {
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-hero:hover {
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);;
+    transform: translateY(-2px);
+    color: #3D3D3D;
+    border: #1A712A 1px solid;
+}
+
 
 .hero-image {
     vertical-align: top;
@@ -396,6 +420,7 @@ body {
     background: none;
     border-radius: 4px;
 }
+
 .product-sale {
     position: absolute;
     width: 80px;
@@ -559,6 +584,10 @@ body {
     float: right;
 }
 
+.promo-btn:hover {
+    background: #3D3D3D;
+    color: #fff;
+}
 .blog {
     text-align: center;
     width: 1202px;
@@ -764,6 +793,10 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 16px; /* 88.889% */
+}
+.newsletter-form button:hover {
+    background: #3D3D3D;
+    color: #fff;
 }
 .visually-hidden {
     position: absolute;
