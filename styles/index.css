@@ -193,7 +193,14 @@ body {
         width: 20px;
         height: 20px;
 }
-
+.btn a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 .btn-hero {
     padding: 11px 24px 9px;
     width: 140px;
@@ -652,4 +659,218 @@ body {
     text-decoration: none;
     padding-left: 15px;
     padding-right: 31px;
+}
+
+.features {
+    background: #FBFBFB;
+    padding: 50px 25px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.features-wrap {
+    display: flex;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 50px;
+}
+.feature h4{
+    color: #3D3D3D;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 94.118% */
+    margin-bottom: 10px;
+}
+.feature p{
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    margin-bottom: 24px;
+}
+
+.icon-garden { background-image: url(images/garden.svg); }
+.icon-renovation { background-image: url(images/renovation.svg); }
+.icon-watering { background-image: url(images/watering.svg); }
+
+
+.newsletter {
+    flex: 1.5;
+}
+.newsletter h4 {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+    margin-bottom: 25px;
+}
+.newsletter-form {
+    display: flex;
+    margin: 18px 0;
+    width: 354px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #ACACAC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    border-radius: 6px 0 0 6px;
+    background: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.newsletter-form button {
+    background: #46A358;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.newsletter p{
+    color: #727272;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 169.231% */
+}
+
+footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-info {
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+    width: 1200px;
+    height: 88px;
+}
+
+.footer-info-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 22px;
+
+}
+
+.footer-info-wrap .footer-logo{
+    padding: 27px 23px;
+}
+.footer-info-wrap p{
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+.footer-info-wrap .address{
+    display: flex;
+    align-items: center;
+}
+
+.footer-info-wrap span .footer-info-span{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 25px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    gap: 5px;
+}
+.footer-col a {
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 214.286% */
+    text-decoration: none;
+}
+.footer-col h4 {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+    padding-bottom: 10px;
+}
+.socials {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 33px;
+}
+
+.social {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.fb { background-image: url(images/fb.svg); }
+.ig { background-image: url(images/insta.svg); }
+.tw { background-image: url(images/twit.svg); }
+.ln { background-image: url(images/linke.svg); }
+.yt { background-image: url(images/youtube.svg); }
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 214.286% */
 }
